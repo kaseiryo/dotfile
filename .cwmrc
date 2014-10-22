@@ -1,0 +1,30 @@
+# File: ~/.cwmrc 
+
+fontname "sans-serif:pixelsize=14:bold"
+sticky yes
+gap 30 73 0 0
+borderwidth 2
+moveamount 20
+color activeborder red
+color inactiveborder gray
+
+command firefox		firefox
+command xpdf		xpdf
+command mplayer		mplayer
+
+ignore 	xclock
+ignore	xconsole
+
+bind 	M-q		quit
+bind	M-r		exec
+bind	M-x		delete
+bind 	MC-r		restart
+
+bind	4S-Left	bigptrmoveleft
+bind	4S-Right	bigptrmoveright
+bind	4S-Up	bigptrmoveup
+bind	4S-Down	bigptrmovedown
+bind	4-Left	ptrmoveleft
+bind	4-Right	ptrmoveright
+bind	4-Up	ptrmoveup
+bind	4-Down	ptrmovedown
