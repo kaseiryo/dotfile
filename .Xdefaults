@@ -1,0 +1,6 @@
+XTerm*font:8x13 
+XTerm*loginShell:true
+XTerm*background:slategray
+XTerm*foreground:white
+#XTerm*geometry:160x50+0+30
+XTerm*termName:xterm-xfree86
