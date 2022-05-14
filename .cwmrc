@@ -9,49 +9,26 @@ fontname "sans-serif:pixelsize=14:bold"
 sticky yes
 
 # Global settings
-gap 30 73 0 0
-borderwidth 2
+gap 50 0 0 0
+borderwidth 3
 moveamount 10
 color activeborder blue
 color inactiveborder gray
+color menubg "#282A36"
+color menufg "#50FA7B"
+color font "F8F8F2"
+color selfont "282A36"
+
 
 # Application menu
 command Terminal        "xterm "
-command Firefox         "firefox"
-command Libreoffice     "soffice"
-command Gimp            "gimp"
-command Gvim            "gvim"
-command Xpdf            "xpdf"
 
 # Ignore programs by not drawing borders around them
-ignore  xconsole
 ignore  xclock
 
 # Autogroup definitions
 autogroup 1     "xterm,XTerm"
-autogroup 2     "Navigator,Firefox"
 
 # Keybindings
-bind    M-q     quit
-bind    M-x     delete
-bind    M-r     exec
-bind 	MC-r	restart
-
-bind    M-0     nogroup
-bind    M-1     grouponly1
-bind    M-2     grouponly2
-bind    M-3     grouponly3
-bind    M-4     grouponly4
-bind    MS-1    movetogroup1
-bind    MS-2    movetogroup2
-bind    MS-3    movetogroup3
-bind    MS-4    movetogroup4
-
-#bind	4S-Left	bigptrmoveleft
-#bind	4S-Right	bigptrmoveright
-#bind	4S-Up	bigptrmoveup
-#bind	4S-Down	bigptrmovedown
-#bind	4-Left	ptrmoveleft
-#bind	4-Right	ptrmoveright
-#bind	4-Up	ptrmoveup
-#bind	4-Down	ptrmovedown
+bind-key  M-q   window-close 
+bind-key M-r menu-exec
